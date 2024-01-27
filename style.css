@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom, white,olivedrab);
+}
+
+main{
+    height: 52.5vh;
+    width: 100%;
+}
+
+#contenedorCalc{
+    border: solid 1px lightgray;
+    width: 235px;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 5px;
+    
+    position: relative;
+    padding-bottom: 0.3rem;
+    user-select: none;
+    /* background-color:olivedrab; */
+    background-color: white;
+}
+.c_buttons{
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(to right, lightgray,white);
+}
+.c_buttons:hover{
+    cursor: move;
+}
+
+.btnctrl{
+    width: 25px;
+    height: 25px;
+    border: solid 1px gray;
+    background-color: lightgray;
+    margin: 0.1rem;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+}
+
+.btn_x{
+    background-color: red;
+    color: white;
+}
+
+#display{
+    background-color:moccasin;
+    text-align: end;
+    width: 220px;
+    margin: 0.1rem 0.5rem;
+    border-radius: 5px;
+    padding: 0.1rem;
+    margin-top: 0.5rem;
+    user-select: text;
+}
+
+.operations1, .operations2{
+    border-radius: 5px;
+    border-style: none;
+    width: 50px;
+    height: 50px;
+    margin: 0.1rem;
+}
+
+#buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.number{
+    border-radius: 5px;
+    border-style: none;
+    width: 50px;
+    height: 50px;
+    margin: 0.1rem;
+}
+
+.symbol{
+    background-color: orange;
+    /* background-color: darkorange; */
+}
+
+#reset{
+    background-color:tomato;
+}
+
+#equal{
+    width: 107px;
+}
+
+#negative, #percentage{
+    background-color: lightgray;
+}
+
+
+
+/*BARRA TAREAS*/
+footer{
+    background: linear-gradient(to bottom,#3A81DF,#245EDC);
+    position: relative;
+    box-shadow: 0px 0px 10px gray;
+    border-style: none;
+    z-index: 3;
+}
+
+#inicio{
+    background: linear-gradient(to bottom,#348D35,#49B049);
+    border-style: none;
+    /* color: white; */
+    width: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 0px 10px 16px 0px;
+    display: flex;
+}
+.win{
+    width: 10px;
+    height: 10px;
+    border-style: none;
+}
+
+.naranja{
+    /* background: linear-gradient(to right, #EE6D3A,#F9A13D,#C5400C); */
+    background-color: #EE6D3A;
+}
+.verde{
+    /* background: linear-gradient(to right, #557B13,#9FD933,#70A908); */
+    background-color: #70A908;
+}
+.azul{
+    /* background: linear-gradient(to right,#6A80F9, #9CAFFF,#3D36D6); */
+    background-color: #2E6DDD;
+}
+
+.amarillo{
+    /* background: linear-gradient(to right,#A38A0A, #FED116, #FAD008); */
+    background-color: #FAD008;
+}
+
+#menu{
+    height: 400px;
+    width: 300px;
+    /* border: solid 1px white; */
+    /* visibility: hidden; */
+    display: flex;
+    box-shadow: 0px 0px 20px gray;
+    z-index: 4;
+
+}
+
+#lateral-izquierdo{
+    height: 400px;
+    width: 50px;
+    /* border: solid 1px gray; */
+    background-color: hsla(0, 0%, 100%,0.5);
+
+}
+
+#lateral-derecho{
+    height: 400px;
+    width: 350px;
+    /* border: solid 1px gray; */
+    background-color: #779CE4;
+}

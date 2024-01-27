@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=div, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="calculator">
-        <div class="top">
-            <div class="c_buttons">
-                <div class="button_r"></div>
-                <div class="button_y"></div>
-                <div class="button_g"></div>
+    <main>
+        <div class="calculator" id="contenedorCalc">
+            <div class="top">
+                <div class="c_buttons" id="c_buttons">
+                    <div class="btnctrl btn_mn">_</div>
+                    <!-- <div class="btnctrl btn_mx">MX</div> -->
+                    <div class="btnctrl btn_x">X</div>
+                </div>
+                <h1 id="display">0</h1>
             </div>
-            <h1 id="display">0</h1>
+            <div id="buttons">
+                <div>
+                    <button class="operations1" id="reset">AC</button>
+                    <button class="operations1" id="negative">+/-</button>
+                    <button class="operations1" id="percentage">%</button>
+                    <button class="operations2 symbol">÷</button>
+                </div>
+                <div>
+                    <button class="number">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+                    <button class="operations2 symbol">x</button>
+                </div>
+                <div>
+                    <button class="number">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+                    <button class="operations2 symbol">-</button>
+                </div>
+                <div>
+                    <button class="number">1</button>
+                    <button class="number">2</button>
+                    <button class="number">3</button>
+                    <button class="operations2 symbol">+</button>
+                </div>
+                <div>
+                    <button class="number">0</button>
+                    <button class="number" id="dot">.</button>
+                    <button class="operations2 symbol" id="equal">=</button>
+                </div>
+            </div>
         </div>
-        <div id="buttons">
-            <button class="operations1" id="reset">AC</button>
-            <button class="operations1" id="negative">+/-</button>
-            <button class="operations1" id="percentage">%</button>
-            <button class="operations2 symbol">÷</button>
-        </div>
-        <div>
-            <button class="number">7</button>
-            <button class="number">8</button>
-            <button class="number">9</button>
-            <button class="operations2 symbol">x</button>
-        </div>
-        <div>
-            <button class="number">4</button>
-            <button class="number">5</button>
-            <button class="number">6</button>
-            <button class="operations2 symbol">-</button>
-        </div>
-        <div>
-            <button class="number">1</button>
-            <button class="number">2</button>
-            <button class="number">3</button>
-            <button class="operations2 symbol">+</button>
-        </div>
-        <div>
-            <button class="number">0</button>
-            <button class="number" id="dot">.</button>
-            <button class="operations2 symbol" id="equal">=</button>
+    </main>
+    <div id="menu">
+        <div id="lateral-izquierdo"></div>
+        <div id="lateral-derecho">
+            <div class="caja-opcion">1</div>
+            <div class="caja-opcion">2</div>
+            <div class="caja-opcion">3</div>
+            <div class="caja-opcion">4</div>
         </div>
     </div>
+    <footer>
+        <button id="inicio">
+            <div>
+                <div class="naranja win"></div>
+                <div class="azul win"></div>
+            </div>
+            <div>
+                <div class="verde win"></div>
+                <div class="amarillo win"></div>
+            </div>
+        </button>
+    </footer>
+
+    <script src="calculadora.js"></script>
 </body>
+
 </html>
